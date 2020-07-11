@@ -9,12 +9,25 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:400,400i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/media.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 <body>
 <div class="container">
-  <nav class="top-nav">search</nav>
+  <nav class="top-nav">
+    <button class = "top-nav__button button__unstyled" type="button">
+      <span class="icon icon_clock"></span>
+    </button>
+    <button class = "top-nav__search button__unstyled" type="button">
+      <span class="top-nav__search__text">Search Ais</span>
+      <span class="icon icon_search"></span>
+    </button>
+    <button class = "top-nav_help button__unstyled" type="button">
+       <span class="icon icon_help"></span>
+    </button>
+
+  </nav>
   <aside class="channel-sidebar">
-    <section class = "channel-sidebar__block channel-sidebar__block__top">
+    <section class = "channel-sidebar__block">
       <div class = "channel-sidebar__header-info">
         <div class = "channel-sidebar__team-name">
           <span class="channel-sidebar__team-name-text">Ais</span>
@@ -24,16 +37,62 @@
         </div>
       </div>
       <button class = "channel-sidebar__new-message">
-        <img src="img/new-message.svg" width="20px" height="20px" alt="New Message">
+        <img src="img/new-message.svg" alt="New Message">
       </button>
     </section>
-    <section class = "channel-sidebar__block channel-sidebar__block__threads">
-
+    <section class = "channel-sidebar__block">
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__threads">Threads</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__activity">Mentions & reactions</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__people">People</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__apps">Apps</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__files">Files</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__show-less">Show less</span>
+      </button>
     </section>
-    <section class = "channel-sidebar__block channel-sidebar__block__channels">
-
+    <section class = "channel-sidebar__block">
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__channels">Channels</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__channel">general</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__channel">questions</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__channel">random</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__channel">task1</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__channel">task2</span>
+      </button>
     </section>
-    <section class = "channel-sidebar__block channel-sidebar__block__messages">
+    <section class = "channel-sidebar__block">
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__messages">Direct messages</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__messages">Slackbot</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__user">Ilya Maylychko (you)</span>
+      </button>
+      <button class = "channel-sidebar__button button__unstyled" type="button">
+        <span class = "channel-sidebar__user">Invite people</span>
+      </button>
 
     </section>
 
@@ -43,8 +102,39 @@
     workspace-primary
   </main>
   <aside class="workspace-secondary">
-    <section class = "workspace-secondary__header">workspace-secondary__header</section>
-    workspace-secondary</aside>
+
+    <section class="workspace-secondary__header">
+
+      details #general
+    </section>
+    <section class="workspace-secondary__body">
+      <div class = "workspace-secondary__actions">
+
+      </div>
+      <div class = "workspace-secondary__details">
+        <button class = "workspace-secondary__button button__unstyled" type="button">
+          <span class = "channel-sidebar__details">About</span>
+        </button>
+        <button class = "workspace-secondary__button button__unstyled" type="button">
+          <span class = "channel-sidebar__details">Members</span>
+        </button>
+        <button class = "workspace-secondary__button button__unstyled" type="button">
+          <span class = "channel-sidebar__details">Shortcuts</span>
+        </button>
+        <button class = "workspace-secondary__button button__unstyled" type="button">
+          <span class = "channel-sidebar__details">Pinned</span>
+        </button>
+        <button class = "workspace-secondary__button button__unstyled" type="button">
+          <span class = "channel-sidebar__details">Files</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    workspace-secondary
+  </aside>
 </div>
 </body>
 </html>

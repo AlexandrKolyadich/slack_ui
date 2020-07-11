@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', 'Open Sans', sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -10,6 +11,7 @@ body {
 
 .top-nav {
     background: #350d36;
+    font-weight: 900;
 }
 
 .channel-sidebar {
@@ -39,3 +41,158 @@ body {
     border-bottom: 1px solid #E2E2E2;
 }
 
+.button__unstyled {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    line-height: inherit;
+    overflow: initial;
+    padding: 0;
+    text-align: initial;
+    vertical-align: initial;
+    cursor: pointer;
+}
+
+.channel-sidebar {
+    color: #BCABBC;
+    padding: 0 19px 0 16px;
+    font-size: 15px;
+}
+
+.channel-sidebar__team-name-text {
+
+    color: white;
+}
+
+.channel-sidebar__team-name-text::after {
+    font-size: 20px;
+    content: "\E252";
+}
+
+.channel-sidebar__user-name {
+    font-size: 13px;
+}
+
+.channel-sidebar__user-name-text::before {
+    content: "\E506";
+}
+
+.channel-sidebar__user-name-text::after {
+    content: "\E506";
+}
+
+.channel-sidebar__button {
+    font-size: 16px;
+    margin: 0 0 0 -3px;
+}
+
+::before, ::after {
+    font-family: Slack v2, serif;
+    font-weight: 500;
+}
+
+.channel-sidebar__threads::before {
+    content: "\E171";
+}
+
+.channel-sidebar__activity::before {
+
+    content: "\E009";
+}
+.channel-sidebar__people::before {
+    content: "\E017";
+}
+.channel-sidebar__apps::before {
+
+    content: "\E00A";
+}
+.channel-sidebar__files::before {
+
+    content: "\E107";
+}
+.channel-sidebar__show-less::before {
+
+    content: "\E264";
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.top-nav__search {
+    display: flex;
+    padding: 0 8px;
+    border: 1px solid #684a68;
+    border-radius: 6px;
+    flex-grow: 1;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #d9d2da;
+}
+
+.top-nav__search:hover {
+    color: white;
+    border: 1px solid #9A869B;
+}
+
+
+.top-nav__button {
+    color: white;
+    padding-right: 16px;
+    padding-left: 32px;
+    min-width: 128px;
+    text-align: end;
+    flex-grow: 1;
+}
+
+.top-nav_help {
+    color: white;
+    padding-right: 16px;
+    padding-left: 32px;
+    min-width: 128px;
+    text-align: end;
+    flex-grow: 1;
+}
+
+.icon {
+    display: inline-block;
+    font-family: Slack v2, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #d7cfd7;
+}
+
+.icon_clock::before {
+    content: "\E079";
+}
+
+.icon_clock:hover {
+    color: white;
+}
+
+.icon_search::before {
+    content: "\E01B";
+}
+
+.icon_help::before {
+    content: "\E211";
+}
+
+.icon_help:hover {
+    color: white;
+}
+
+.channel-sidebar__block {
+    font-size: 15px;
+
+}
