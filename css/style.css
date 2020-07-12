@@ -1,7 +1,9 @@
 body {
     font-family: 'Lato', 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 900;
     margin: 0;
+    text-decoration: none;
+    outline: none;
 }
 
 .container {
@@ -12,10 +14,6 @@ body {
 .top-nav {
     background: #350d36;
     font-weight: 900;
-}
-
-.channel-sidebar {
-    background: #3F0E40;
 }
 
 .workspace-primary {
@@ -56,13 +54,21 @@ body {
 }
 
 .channel-sidebar {
+    background: #3F0E40;
+}
+
+.channel-sidebar__block {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #532753;
     color: #BCABBC;
-    padding: 0 19px 0 16px;
+    padding: 10px 0 10px 0;
     font-size: 15px;
+    line-height: 28px;
 }
 
 .channel-sidebar__team-name-text {
-
+    display: block;
     color: white;
 }
 
@@ -76,21 +82,79 @@ body {
 }
 
 .channel-sidebar__user-name-text::before {
+    font-size: 16px;
+    color: #2bac76;
     content: "\E506";
 }
 
-.channel-sidebar__user-name-text::after {
-    content: "\E506";
+.channel-sidebar__messages::before {
+    font-size: 16px;
+    color: #2bac76;
+    content: "\E515";
 }
 
+.user_name_emoji {
+    padding-left: 4px;
+    height: 16px;
+    width: 16px;
+}
+
+.channel-sidebar__user-name-text:hover {
+    color: white;
+}
+
+.channel-sidebar__header-info {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    padding: 0 16px 0 19px;
+}
+
+.channel-sidebar__new-message {
+    border: 1px solid #3f0e40;
+    border-radius: 100%;
+    fill: #3F0E40;
+    top: 14px;
+    height: 36px;
+    width: 36px;
+}
+
+.channel__active {
+    background-color: rgb(17, 100, 163);
+    color: white;
+}
+
+.svg-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.channel-sidebar__plus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus {
+    font-size: 30px;
+    margin-right: 16px;
+}
 .channel-sidebar__button {
     font-size: 16px;
-    margin: 0 0 0 -3px;
+    padding: 0 16px 0 19px
+}
+
+.channel-sidebar__button:hover {
+    background: #350D36;
 }
 
 ::before, ::after {
     font-family: Slack v2, serif;
     font-weight: 500;
+    padding-right: 5px;
+}
+
+:focus {
+    outline: none;
 }
 
 .channel-sidebar__threads::before {
@@ -101,20 +165,40 @@ body {
 
     content: "\E009";
 }
+
 .channel-sidebar__people::before {
+
     content: "\E017";
 }
+
 .channel-sidebar__apps::before {
 
     content: "\E00A";
 }
+
 .channel-sidebar__files::before {
 
     content: "\E107";
 }
+
 .channel-sidebar__show-less::before {
 
     content: "\E264";
+}
+
+.channel-sidebar__show-less:hover {
+
+    color: white;
+}
+
+.channel-sidebar__channels::before {
+
+    content: "\E271";
+}
+
+.channel-sidebar__channel__sealed::before {
+    padding-right: 0;
+    content: "\E567";
 }
 
 .top-nav {
@@ -123,6 +207,7 @@ body {
     align-items: center;
 
 }
+
 .top-nav__search {
     display: flex;
     padding: 0 8px;
@@ -192,7 +277,3 @@ body {
     color: white;
 }
 
-.channel-sidebar__block {
-    font-size: 15px;
-
-}
