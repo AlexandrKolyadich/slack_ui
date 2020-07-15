@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 744px) {
     .container {
-        grid-template-columns: 15% auto 20%;
+        grid-template-columns: 20% auto 20%;
     }
     .top-nav {
         grid-column: 1 / span 3;
